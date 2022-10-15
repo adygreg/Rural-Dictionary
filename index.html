@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Urban Dictionary</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="container flex">
+                <div class="top-section">
+                    <a href="#">
+                        <img src="./logo.svg" alt="Logo"></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Browse <i class="fa-solid fa-caret-down"></i></a></li>
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Discord</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="bottom-section">
+                    <button type="button" class="menu img-btn hidden" onclick="onClickMenu()">
+                        <img src="./logo.png" alt="logo">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </button>
+                    <form>
+                        <i class="fa-solid fa-magnifying-glass magnifying-glass"></i>
+                        <input type="search" name="searchBox" class="search-box" placeholder="Search" />
+                        <a href="">
+                            <i class="fa-solid fa-shuffle shuffle"></i>
+                        </a>
+                    </form>
+                    <button type="button" class="add btn sm-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button type="button" class="account btn sm-btn">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <button type="button" class="menu img-btn hidden">
+                        <i class="fa-solid fa-store"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toggle-menu hidden">
+            <ul>
+                <li><a href="#">Home page</a></li>
+                <li><a href="#">Browser</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Discord</a></li>
+                <li><a href="#">Add a defination</a></li>
+                <li><a href="#">User Settings</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="container flex">
+            <article class="flex">
+
+                <section class="dic-card card">
+                    <h2 class="title"> <a href="#" class="no-hover no-underline"> Three-Minute Rule </a> </h2>
+                    <p class="defination">
+                        In <a href="#">Psychology</a>, any new <a href="">acquaintance</a> <a href="#">that sucks</a> in
+                        the first three minutes will suck forever.
+                    </p>
+                    <em class="example">
+                        Will we meet again? <br/>
+                        <a href="#">Doubt it</a>... didn't <a href="#">pass</a> <a
+                            href="#">three-minute rule</a>.
+                    </em>
+                    <strong class="contibutor"> by <a href="#" class="no-underline">rperazag</a> May 6, 2010 </strong>
+
+                    <div class="cta-container flex">
+                        <div class="rating">
+                            <button class="btn btn-outline like-button rate-btn">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p class="like-count"> 512 </p>
+                            </button>
+                            <button class="btn btn-outline dislike-button rate-btn">
+                                <i class="fa-solid fa-thumbs-down"></i>
+                                <p class="dislike-count"> 79 </p>
+                            </button>
+                        </div>
+                        <button class="btn btn-outline report-button">
+                            <i class="fa-solid fa-flag"></i>
+                            <p>Flag</p>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="dic-card card">
+                    <h2 class="title"> <a href="#" class="no-hover no-underline"> Shit's Creek </a> </h2>
+                    <p class="defination">
+                        To be up "Shit's Creek" is to be in serious or complex trouble, such as to
+                        (literally) be "<a href="#">up a creek without a paddle</a>." It is synonymous with Urban
+                        Dictionary's expression "<a href="">Shit Street</a>" and is possibly its <a
+                            href="#">antecedent</a>.</p>
+                    <em class="example">
+                        "When the <a href="#"> deal</a> <a href="#">fell through</a>, we were up Shit's
+                        Creek".<br />"If he gets caught again he will <a href="#">be up</a> Shit's Creek."
+                    </em>
+                    <strong class="contibutor"> by <a href="#" class="no-underline">Kcstealth</a> March 5, 2016
+                    </strong>
+
+                    <div class="cta-container flex">
+                        <div class="rating">
+                            <button class="btn btn-outline like-button rate-btn">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p class="like-count"> 459 </p>
+                            </button>
+                            <button class="btn btn-outline dislike-button rate-btn">
+                                <i class="fa-solid fa-thumbs-down"></i>
+                                <p class="dislike-count"> 68 </p>
+                            </button>
+                        </div>
+                        <button class="btn btn-outline report-button">
+                            <i class="fa-solid fa-flag"></i>
+                            <p>Flag</p>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="dic-card card">
+                    <h2 class="title"><a href="#" class="no-hover no-underline"> fnork </a></h2>
+                    <p class="defination">
+                        The sound produced when two elephants, joined at <a href="#">the trunk</a> sneeze simultaneously
+                        <br/><br/>
+                        n. A Low to high-pitched, irritating screech. <br/>
+                        v. fnorked, fnorking, fnorks <br/>
+                        v.tr. To utter in or as if in a fnork. <br/>
+                        v.intr. To <a href="#">cry out</a> in a low to high-pitched, <a href="">strident</a> voice.
+                    </p>
+                    <em class="example">
+                        The entire zoo shook when Gerald and Phyllisity sneezed while exchanging a peanut via thier
+                        <a href="#">trunks</a> producing an ear shattering fnork, which sent thirteen people to the
+                        hospital with
+                        damaged eardrums, and generated a $1700.34 veterinarians bill to extract a peanut (in the shell)
+                        from the tear <a href="#">duct</a> in Gerald’s <a href="">left eye</a>.
+                    </em>
+                    <strong class="contibutor"> by <a href="#" class="no-underline">MetLab Bob</a> May 20, 2006</strong>
+
+                    <div class="cta-container flex">
+                        <div class="rating">
+                            <button class="btn btn-outline like-button rate-btn">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p class="like-count"> 459 </p>
+                            </button>
+                            <button class="btn btn-outline dislike-button rate-btn">
+                                <i class="fa-solid fa-thumbs-down"></i>
+                                <p class="dislike-count"> 68 </p>
+                            </button>
+                        </div>
+                        <button class="btn btn-outline report-button">
+                            <i class="fa-solid fa-flag"></i>
+                            <p>Flag</p>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="dic-card card">
+                    <h2 class="title"><a href="#" class="no-hover no-underline"> oubliette </a></h2>
+                    <p class="defination">
+                        Actually: An underground <a href="#">chamber</a> swith access only <a href="#">from the top</a>. (18th <a href="">Century</a>)
+                        <br/><br/>
+                        Modern Slang: Asshole
+                    </p>
+                    <em class="example">
+                        <a href="">Fold</a> that into a <a href="">tiny</a> piece and <a href="">shove</a> them in your oubliette
+                    </em>
+                    <strong class="contibutor"> by <a href="#" class="no-underline">Walter Street</a>August 31, 2017</strong>
+
+                    <div class="cta-container flex">
+                        <div class="rating">
+                            <button class="btn btn-outline like-button rate-btn">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p class="like-count"> 459 </p>
+                            </button>
+                            <button class="btn btn-outline dislike-button rate-btn">
+                                <i class="fa-solid fa-thumbs-down"></i>
+                                <p class="dislike-count"> 68 </p>
+                            </button>
+                        </div>
+                        <button class="btn btn-outline report-button">
+                            <i class="fa-solid fa-flag"></i>
+                            <p>Flag</p>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="page-card flex">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#" class="selected">1</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" ">2</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" ">3</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" ">4</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" ">5</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <a href="#">
+                            <p>Next</p>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <a href="#">
+                            <p>Last</p>
+                            <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </div>
+                    <button class="btn">
+                        <p>More random definations</p>
+                    </button>
+                </section>
+
+
+            </article>
+            <aside>
+                <section class="aside-card card">
+                    <div class="flex">
+                        <h2 class="title"><span class="highlight">URBAN</span><br /><span
+                                class="highlight">DICTIONARY<span><br /><span class="highlight">IS
+                                        WRITTEN</span><br /><span class="highlight">BY YOU</span></h2>
+                        <img src="https://media3.giphy.com/media/WVYksxODMY4vK/100.webp" alt="random-pic">
+                    </div>
+                    <button class="btn">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Define a Word</p>
+                    </button>
+                </section>
+                <div class="socials grid grid_2c">
+                    <div class="social_1 social-card card">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                            <p>Twitter</p>
+                        </a>
+                    </div>
+                    <div class="social_2 social-card card">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                            <p>Facebook</p>
+                        </a>
+                    </div>
+                    <div class="social_3 social-card card">
+                        <a href="#">
+                            <i class="fa-solid fa-comment"></i>
+                            <p>Help</p>
+                        </a>
+                    </div>
+                    <div class="social_4 social-card card">
+                        <a href="#">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Subscribe</p>
+                        </a>
+                    </div>
+                </div>
+                <section class="footer">
+                    <div class="ft-container">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <p>© 1999-2022 Urban Dictionary ®</p>
+                                </li>
+                                <li>
+                                    <a href="#">ads</a>
+                                </li>
+                                <li>
+                                    <a href="#">help</a>
+                                </li>
+                                <li>
+                                    <a href="#">bugs</a>
+                                </li>
+                                <li>
+                                    <a href="#">dmcs</a>
+                                </li>
+                                <li>
+                                    <a href="#">privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#">terms of service</a>
+                                </li>
+                                <li>
+                                    <a href="#">data subject request</a>
+                                </li>
+                                <li>
+                                    <a href="#">accessibility statement</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <script>
+        const toggle_menu = document.querySelector(".toggle-menu");
+        let menu_open = false;
+        onClickMenu = () => {
+            console.log(toggle_menu)
+            if(!menu_open) {
+                toggle_menu.classList.remove("hidden");
+                menu_open = true;
+            } else {
+                toggle_menu.classList.add("hidden");
+                menu_open = false;
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>
