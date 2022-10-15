@@ -319,18 +319,7 @@
     </main>
 
     <script>
-        const toggle_menu = document.querySelector(".toggle-menu");
-        let menu_open = false;
-        onClickMenu = () => {
-            console.log(toggle_menu)
-            if(!menu_open) {
-                toggle_menu.classList.remove("hidden");
-                menu_open = true;
-            } else {
-                toggle_menu.classList.add("hidden");
-                menu_open = false;
-            }
-        }
+        onClickMenu = () => document.querySelector(".toggle-menu").classList.toggle('hidden');
     </script>
 
 </body>
